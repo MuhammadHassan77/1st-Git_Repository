@@ -16,12 +16,12 @@
     <!-- <div class="200 my-5  mx-4" style="height:200px"></div> -->
     <div class="container my-5">
         <div class="container">
-            <div class="container">
+            <div class="container bg-warning py-5 rounded-lg">
                 <div class="container">
                     <div class="container">
                         <div class="container">
 
-                            <div class="row block bg-secondary">
+                            <div class="row block">
 
                             </div>
                         </div>
@@ -130,19 +130,18 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 <script>
-    let b = 1;
-    let prinT;
     for (let a = 1; a < 9; a++) {
         if (a % 2 === 0) {
             for (let z = 1; z < 9; z++) {
                 if (z % 2 === 0) {
-                    (z === 6 || z === 7 || z === 8) ? $(`.${z}.bg-dark`).html('<div class="rounded-pill bg-warning m-3 w-75 h-75"></div>') : "";
-                    $(".block").append(`<div class="bg-dark  ${b}" style="width:123.75px;height:123.75px;">
+                    ((z === 6 || z === 7 || z === 8) ? $(`.${z}.bg-dark`).html('<div class="rounded-pill bg-success m-3 w-75 h-75"></div>') : "");
+                    $(".block").append(`<div class="bg-dark  ${a}" style="width:123.75px;height:123.75px;">
+                        
                         </div>`);
                 }
                 else {
-                    (z === 1 || z === 2 || z === 3) ? $(`.${z}.bg-white`).html('<div class="rounded-pill bg-danger m-3 w-75 h-75"></div>') : "";
-                    $(".block").append(`<div class="bg-white ${b}" style="width:123.75px;height:123.75px;">
+                    ((z === 1 || z === 2 || z === 3) ? $(`.${z}.bg-white`).html('<div class="rounded-pill bg-danger m-3 w-75 h-75"></div>') : "");
+                    $(".block").append(`<div class="bg-white ${a}" style="width:123.75px;height:123.75px;">
 
                         </div>`);
                 }
@@ -152,29 +151,30 @@
 
             for (let z = 1; z < 9; z++) {
                 if (z % 2 !== 0) {
-                    (z === 6 || z === 7 || z === 8) ? $(`.${z}.bg-dark`).html('<div class="rounded-pill bg-warning m-3 w-75 h-75"></div>') : "";
-                    $(".block").append(`<div class="bg-dark  ${b}" style="width:123.75px;height:123.75px;">
+                    ((z === 6 || z === 7 || z === 8) ? $(`.${z}.bg-dark`).html('<div class="rounded-pill bg-success m-3 w-75 h-75"></div>') : "");
+                    $(".block").append(`<div class="bg-dark  ${a}" style="width:123.75px;height:123.75px;">
 
                         </div>`);
                 }
                 else {
-                    (z === 1 || z === 2 || z === 3) ? $(`.${z}.bg-white`).html('<div class="rounded-pill bg-danger m-3 w-75 h-75"></div>') : "";
-                    $(".block").append(`<div class="bg-white  ${b}" style="width:123.75px;height:123.75px;">
+                    ((z === 1 || z === 2 || z === 3) ? $(`.${z}.bg-white`).html('<div class="rounded-pill bg-danger m-3 w-75 h-75"></div>') : "");
+                    $(".block").append(`<div class="bg-white  ${a}" style="width:123.75px;height:123.75px;">
                         
                         </div>`);
                 }
             }
         }
-        b++;
     }
-    console.log($(".bg-dark").length, $(".bg-white").length)
-    $(`.${7}.bg-dark`).html('<div class="rounded-pill bg-warning m-3 w-75 h-75"></div>')
-    $(`.${8}.bg-dark`).html('<div class="rounded-pill bg-warning m-3 w-75 h-75"></div>')
+
+    // console.log($(".bg-dark").length, $(".bg-white").length)
+    // $(`.${7}.bg-dark`).html('<div class="rounded-pill bg-success m-3 w-75 h-75"></div>')
+    // $(`.${8}.bg-dark`).html('<div class="rounded-pill bg-success m-3 w-75 h-75"></div>')
+
     // let j = 199;
     // for (let i = 200; i > 0; i--) {
     //     setTimeout(() => {
 
-    //         // $(".root").append(`<div class="${i}" style="width:${i}px;height:${i}px;
+    //         // $(".root").append(`<div class="${i}" style="width:${i}px;height:${i}px;padding:0.5px ;
     //         //         background-color: #${(Math.random() * 0xffffff).toString(16).substr(-6)}"></div>`);
     //         // $("").append(`<div class="${i}" style="width:${i}px;height:${i}px;
     //         //         background-color: #${(Math.random() * 0xffffff).toString(16).substr(-6)}">

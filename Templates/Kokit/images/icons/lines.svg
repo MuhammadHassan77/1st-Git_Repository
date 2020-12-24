@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="93" viewBox="0 0 93 93">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_161" data-name="Rectangle 161" width="93" height="93" transform="translate(1053 1353)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4686fd"/>
+      <stop offset="1" stop-color="#4655fd"/>
+    </linearGradient>
+  </defs>
+  <g id="lines" transform="translate(-1053 -1353)" clip-path="url(#clip-path)">
+    <g id="lines-2" data-name="lines">
+      <rect id="Rectangle_109" data-name="Rectangle 109" width="46.004" height="29.561" rx="14.78" transform="translate(1097.075 1410.224) rotate(-45)" opacity="0.14" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_107" data-name="Rectangle 107" width="46.137" height="32.182" rx="16" transform="translate(1048.08 1394.765) rotate(-45)" fill="url(#linear-gradient)"/>
+      <path id="Path_246" data-name="Path 246" d="M22.929,0H83.478a22.929,22.929,0,1,1,0,45.857H22.929A22.929,22.929,0,0,1,22.929,0Z" transform="translate(1045.099 1420.221) rotate(-45)" fill="#80e7ff"/>
+    </g>
+  </g>
+</svg>

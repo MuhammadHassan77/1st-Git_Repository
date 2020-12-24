@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="185" viewBox="0 0 117 185">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_160" data-name="Rectangle 160" width="117" height="185" transform="translate(1616 6102)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4686fd"/>
+      <stop offset="1" stop-color="#4655fd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25e6fd"/>
+      <stop offset="1" stop-color="#6fa7fe"/>
+    </linearGradient>
+  </defs>
+  <g id="subsc-right" transform="translate(-1616 -6102)" clip-path="url(#clip-path)">
+    <g id="Group_22" data-name="Group 22" transform="translate(0 358)">
+      <rect id="Rectangle_94" data-name="Rectangle 94" width="65" height="394" rx="32.5" transform="matrix(0.5, 0.866, -0.866, 0.5, 2012.634, 5584.106)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_93" data-name="Rectangle 93" width="65" height="436" rx="32.5" transform="matrix(0.5, 0.866, -0.866, 0.5, 1996.083, 5619.057)" fill="url(#linear-gradient-2)"/>
+      <rect id="Rectangle_92" data-name="Rectangle 92" width="65" height="453" rx="32.5" transform="matrix(0.5, 0.866, -0.866, 0.5, 1998.382, 5656.921)" fill="#80e7ff"/>
+    </g>
+  </g>
+</svg>

@@ -2,12 +2,20 @@
 $answer = "";
 $msg = "";
 if (isset($_POST["Go"])) {
-    if (!empty($_POST["Number"])) {
-        // $num = $_POST["Number"];
+    if (!empty($_POST["Number"]) || $_POST["Number"] == 0) {
+        $num = substr(abs($_POST["Number"]), 0, 3);
         // $num = substr($num, 0, 3);
-        $answer = factorialCounter(substr(abs($_POST["Number"]), 0, 3));
-        $msg = '<div style="font-size: 2em;color: white;text-align: center;width: 100%;height: 50px;margin: 10px;background-color: #008000bf;">Successfull!!</div>';
-        // exit;
+        if ($num >= 170) {
+            $msg = '<div style="font-size: 2em;color: white;text-align: center;width: 100%;height: 50px;margin: 10px;background-color: #008000bf;">
+            Your Input Should Be less than 171</div>';
+        } else {
+            ($num == 0) ? $answer = '<h1 style="text-align: center;color:blue;"> ANS = ' . 1 . '</h1>'
+                : $answer = factorialCounter($num);
+            // echo "<h2> Your Input " . abs($_POST['Number']) . "</h2>";
+            $msg = '<h2> Your Input : ' . $num . '</h2>'
+                . '<div style="font-size: 2em;color: white;text-align: center;width: 100%;height: 50px;margin: 10px;background-color: #008000bf;">Successfull!!</div>';
+            // exit;
+        }
     } else {
         $msg = '<div style="font-size: 2em;color: white;text-align: center;width: 100%;height: 50px;margin: 10px;background-color: #80000099;">Enter a valid Number!!</div>';
     }
@@ -19,10 +27,10 @@ function factorialCounter($num)
     $steps = "";
     for ($j = 1; $j < $n; $j++) {
         if ($j == 1) {
-            $steps .= "\t( " . $n . " x (" . $n . "-" . $j . ") x ";
+            $steps .= "\t( " . $n . " * (" . $n . "-" . $j . ") * ";
             $r =  ($n * ($n - $j));
         } else {
-            $steps .= "\t(" . $n . "-" . $j . ") x ";
+            $steps .= "\t(" . $n . "-" . $j . ") * ";
             $r *= ($n - $j);
         }
     }
@@ -51,7 +59,7 @@ function factorialCounter($num)
         </h1>
         <div style="width:60%;margin:10px auto;border:olive 1px solid;padding:30px">
             <form action="" method="post">
-                <input type="number" name="Number" style="width: 80%;padding:5px">
+                <input type="number" name="Number" style="width: 80%;padding:5px" placeholder="Number Of Objects">
                 <input type="submit" name="Go" value="Calculate" style="width: 15%;padding:5px" />
             </form>
         </div>

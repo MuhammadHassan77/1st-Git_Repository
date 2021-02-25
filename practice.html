@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Feedback | Counter</title>
+    <meta name="description" content="Dashboard UI Kit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="./public/bootstrap 5/js/jquery.min.js"></script>
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./public/bootstrap 5/css/bootstrap.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="./public/fontawesome/css/all.css">
+
+</head>
+
+<body>
+    <div class="container-fluid my-5 py-5">
+        <div class="row">
+            <div class="col-8 offset-2 bg-dark py-5">
+                <h2 class="text-center text-secondary my-4">Feedback Component</h2>
+
+                <div class="d-flex">
+                    <div class="fa-angry offset-1 col-2 text-center">
+                        <i class="fa fa-angry text-danger"></i>
+                        <h6 class="text-danger">Worst</h6>
+                    </div>
+                    <div class="fa-frown col-2 text-center">
+                        <i class="fa fa-frown text-warning"></i>
+                        <h6 class="text-warning">Poor</h6>
+                    </div>
+                    <div class="fa-meh col-2 text-center">
+                        <i class="fa fa-meh text-primary"></i>
+                        <h6 class="text-primary">Average</h6>
+                    </div>
+                    <div class="fa-laugh col-2 text-center">
+                        <i class="fa fa-laugh text-info"></i>
+                        <h6 class="text-info">Good</h6>
+                    </div>
+                    <div class="fa-smile-beam col-2 text-center">
+                        <i class="fa fa-smile-beam text-success"></i>
+                        <h6 class="text-success">Awesome</h6>
+                    </div>
+                </div>
+                <div class="mx-auto" style="width:67% !important">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="d-flex my-3" style="justify-content: space-evenly;">
+                    <h4 class="text-secondary"> Your Choice </h4>
+                    <h4 class="choice"> </h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="./public/bootstrap 5/js/bootstrap.js"></script>
+<script>
+    $(".fa").addClass('fa-6x');
+
+    $(".fa-angry").hover(() => {
+        $(".progress-bar").css({ 'width': '0%', 'background-color': '#dc3545' });
+    })
+    $(".fa-frown").hover(() => {
+        $(".progress-bar").css({ 'width': '26.5%', 'background-color': '#ffc107' });
+    })
+    $(".fa-meh").hover(() => {
+        $(".progress-bar").css({ 'width': '51.5%', 'background-color': '#0d6efd' });
+    })
+    $(".fa-laugh").hover(() => {
+        $(".progress-bar").css({ 'width': '76.5%', 'background-color': '#0dcaf0' });
+    })
+    $(".fa-smile-beam").hover(() => {
+        $(".progress-bar").css({ 'width': '100%', 'background-color': '#198754' });
+    })
+
+    $(".fa-angry").click(() => {
+        $(".choice").text($("h6.text-danger").text());
+        $(".choice").css('color', '#dc3545');
+    })
+    $(".fa-frown").click(() => {
+        $(".choice").text($("h6.text-warning").text());
+        $(".choice").css('color', '#ffc107');
+    })
+    $(".fa-meh").click(() => {
+        $(".choice").text($("h6.text-primary").text());
+        $(".choice").css('color', '#0d6efd');
+    })
+    $(".fa-laugh").click(() => {
+        $(".choice").text($("h6.text-info").text());
+        $(".choice").css('color', '#0dcaf0');
+    })
+    $(".fa-smile-beam").click(() => {
+        $(".choice").text($("h6.text-success").text());
+        $(".choice").css('color', '#198754');
+    })
+
+
+    $(".bg-dark").mouseout(() => {
+        $(".progress-bar").css({ 'width': '76.5%', 'background-color': '#0dcaf0' });
+    })
+</script>
+
+</html>
